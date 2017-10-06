@@ -15,7 +15,7 @@ To operate Redux uses a concept of `reducer` which works exactly the same way th
 let's take a simple example :
 
 ```javascript
-import { createStore } from 'redux'
+var {createStore} = require('redux');
 
 /**
  * Here we have a unique reducer to handle a state of type `number`
@@ -41,7 +41,7 @@ function counter(state = 0, action) {
  * using the `counter` reducer
  * the API of the store is the following { subscribe, dispatch, getState }.
  */
-let store = createStore(counter)
+var store = createStore(counter)
 
 /**
  * Now we can subscribe to the store and listen to state mutations.
